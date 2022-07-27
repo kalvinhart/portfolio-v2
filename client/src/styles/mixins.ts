@@ -15,7 +15,7 @@ export const slopedSectionTop = css`
     ${slopedSectionSetup}
 
     top: -50px;
-    transform: skewY(1deg);
+    transform: skewY(1.8deg);
   }
 `;
 
@@ -24,6 +24,6 @@ export const slopedSectionBottom = css`
     ${slopedSectionSetup}
 
     bottom: -50px;
-    transform: skewY(1deg);
+    transform: skewY(1.8deg);
   }
 `;
