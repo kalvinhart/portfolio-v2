@@ -3,13 +3,16 @@ import { MainContainer } from "../../styles/containers";
 
 export const StyledHeader = styled.header`
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
-  height: 60px;
+  height: var(--header-height);
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  background-color: #333;
+  background-color: #111;
   color: white;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
 
   & ${MainContainer} {
     display: flex;
@@ -32,7 +35,7 @@ export const HeaderNavUL = styled.ul`
 
 export const HeaderNavLI = styled.li`
   &:not(:last-of-type) {
-    margin-right: 10px;
+    margin-right: 20px;
   }
 `;
 
