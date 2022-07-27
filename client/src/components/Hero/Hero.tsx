@@ -4,7 +4,7 @@ import { HeroContentWrapper, HeroWrapper } from "./Hero.styles";
 
 const Hero = () => {
   return (
-    <HeroWrapper>
+    <HeroWrapper id="hero">
       <MainContainer>
         <HeroContentWrapper>
           <H1>Kalvin Hart</H1>

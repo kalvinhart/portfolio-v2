@@ -4,7 +4,7 @@ import { AboutWrapper } from "./About.styles";
 
 const About = () => {
   return (
-    <AboutWrapper>
+    <AboutWrapper id="about">
       <MainContainer>
         <H2>About Me</H2>
       </MainContainer>
