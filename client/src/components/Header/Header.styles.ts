@@ -46,6 +46,6 @@ export const HeaderNavLink = styled.a`
   transition: color 0.2s ease-out;
 
   &:hover {
-    color: #0cc;
+    color: var(--clr-primary);
   }
 `;

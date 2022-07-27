@@ -78,5 +78,6 @@ select {
 
 /* CSS Variables */
 :root {
+  --clr-primary: #0cc;
   --header-height: 60px;
 }
