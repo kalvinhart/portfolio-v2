@@ -2,7 +2,12 @@ import styled from "styled-components";
 import { MainContainer } from "../../styles/containers";
 
 export const StyledHeader = styled.header`
+  position: fixed;
+  width: 100vw;
+  height: 60px;
   padding: 10px 20px;
+  display: flex;
+  align-items: center;
   background-color: #333;
   color: white;
 
