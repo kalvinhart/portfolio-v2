@@ -1,5 +1,30 @@
 import { css } from "styled-components";
 
+export const sideLine = css`
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 5px;
+    height: 100%;
+    display: block;
+    background-color: #0cc;
+  }
+`;
+
+export const underLine = css`
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: #0cc;
+  }
+`;
+
 const slopedSectionSetup = css`
   content: "";
   position: absolute;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { sideLine } from "../../styles/mixins";
 
 export const HeroWrapper = styled.section`
   margin-top: var(--header-height);
@@ -9,5 +10,8 @@ export const HeroWrapper = styled.section`
 `;
 
 export const HeroContentWrapper = styled.div`
+  position: relative;
   padding: 80px;
+
+  ${sideLine}
 `;
