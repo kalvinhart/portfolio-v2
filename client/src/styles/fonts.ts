@@ -21,6 +21,19 @@ export const SpanRegular = styled.span`
   font-size: 16px;
 `;
 
+export const SpanBold = styled.span`
+  font-size: 16px;
+  font-weight: bold;
+`;
+
+export const SpanTag = styled.span`
+  padding: 2px 8px;
+  font-size: 14px;
+  background-color: var(--clr-primary);
+  color: white;
+  border-radius: 100px;
+`;
+
 export const Paragraph = styled.p`
   font-size: 16px;
   line-height: 25px;
