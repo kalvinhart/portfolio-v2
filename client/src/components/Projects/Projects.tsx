@@ -13,8 +13,9 @@ import {
   ProjectsWrapper,
 } from "./Projects.styles";
 
-import eShopImage from "../../images/eshop.png";
 import { NewWindowSVG } from "../NewWindowSVG";
+
+import { projects } from "../../data/projects";
 
 const Projects = () => {
   return (
@@ -32,37 +33,36 @@ const Projects = () => {
         </ProjectsContentWrapper>
 
         <ProjectsGrid>
-          <ProjectCard>
-            <ProjectCardImage src={eShopImage} alt="eCommerce Store" />
+          {projects.map((project) => (
+            <ProjectCard key={project.id}>
+              <ProjectCardImage src={project.imageURL} alt={project.title} />
 
-            <ProjectCardContent>
-              <SpanBold>eCommerce Store</SpanBold>
+              <ProjectCardContent>
+                <SpanBold>{project.title}</SpanBold>
 
-              <ProjectCardLinks>
-                <Link href="https://mernestore.herokuapp.com/" target="_blank">
-                  Live Demo
-                  <NewWindowSVG />
-                </Link>
-                <Link href="https://github.com/kalvinhart/shop" target="_blank">
-                  GitHub
-                  <NewWindowSVG />
-                </Link>
-              </ProjectCardLinks>
+                <ProjectCardLinks>
+                  {project.liveURL !== "" && (
+                    <Link href={project.liveURL} target="_blank">
+                      Live Demo
+                      <NewWindowSVG />
+                    </Link>
+                  )}
+                  <Link href={project.gitHubURL} target="_blank">
+                    GitHub
+                    <NewWindowSVG />
+                  </Link>
+                </ProjectCardLinks>
 
-              <Paragraph>
-                A full stack application with several features, such as searching, sorting
-                and filtering products with paginated results, integration with Stripe to
-                take customer payments, search suggestions and more.
-              </Paragraph>
+                <Paragraph>{project.description}</Paragraph>
 
-              <ProjectCardTagWrapper>
-                <SpanTag>React</SpanTag>
-                <SpanTag>TypeScript</SpanTag>
-                <SpanTag>Node/Express</SpanTag>
-                <SpanTag>MongoDB</SpanTag>
-              </ProjectCardTagWrapper>
-            </ProjectCardContent>
-          </ProjectCard>
+                <ProjectCardTagWrapper>
+                  {project.tags.map((tag) => (
+                    <SpanTag key={tag}>{tag}</SpanTag>
+                  ))}
+                </ProjectCardTagWrapper>
+              </ProjectCardContent>
+            </ProjectCard>
+          ))}
         </ProjectsGrid>
       </MainContainer>
     </ProjectsWrapper>

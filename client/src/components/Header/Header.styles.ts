@@ -3,6 +3,7 @@ import { MainContainer } from "../../styles/containers";
 
 export const StyledHeader = styled.header`
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   width: 100vw;

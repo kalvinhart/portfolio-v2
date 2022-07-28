@@ -18,12 +18,16 @@ export const ProjectsContentText = styled.div`
 `;
 
 export const ProjectsGrid = styled.div`
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 560px);
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
 `;
 
 export const ProjectCard = styled.div`
-  width: 320px;
+  min-width: 300px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -32,7 +36,7 @@ export const ProjectCard = styled.div`
 
 export const ProjectCardImage = styled.img`
   width: 300px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 `;
 
 export const Link = styled.a`
@@ -64,6 +68,7 @@ export const ProjectCardLinks = styled.div`
 `;
 
 export const ProjectCardContent = styled.div`
+  height: 100%;
   display: flex;
   flex-direction: column;
 
@@ -78,6 +83,7 @@ export const ProjectCardContent = styled.div`
 
 export const ProjectCardTagWrapper = styled.div`
   display: flex;
+  margin-top: auto;
   flex-wrap: wrap;
   align-items: center;
   min-height: 60px;
