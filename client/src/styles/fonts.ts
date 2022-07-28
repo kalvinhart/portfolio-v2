@@ -17,12 +17,21 @@ export const SpanHeroTitle = styled.span`
   font-size: 54px;
 `;
 
+export const SpanPrimary = styled.span`
+  color: var(--clr-primary);
+`;
+
 export const SpanLarge = styled.span`
-  font-size: 36px;
+  font-size: 32px;
 `;
 
 export const SpanRegular = styled.span`
   font-size: 16px;
+`;
+
+export const SpanCopyright = styled.span`
+  font-size: 12px;
+  color: #ccc;
 `;
 
 export const SpanBold = styled.span`
