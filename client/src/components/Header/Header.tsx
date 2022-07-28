@@ -1,4 +1,5 @@
 import { MainContainer } from "../../styles/containers";
+import { SpanPrimary } from "../../styles/fonts";
 import {
   HeaderLogo,
   HeaderNav,
@@ -12,7 +13,9 @@ const Header = () => {
   return (
     <StyledHeader>
       <MainContainer>
-        <HeaderLogo>Kalvin Hart</HeaderLogo>
+        <HeaderLogo>
+          Kalvin <SpanPrimary>Hart</SpanPrimary>
+        </HeaderLogo>
         <HeaderNav>
           <HeaderNavUL>
             <HeaderNavLI>
