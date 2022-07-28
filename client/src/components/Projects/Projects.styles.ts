@@ -3,7 +3,7 @@ import { Paragraph, SpanBold } from "../../styles/fonts";
 
 export const ProjectsWrapper = styled.section`
   width: 100%;
-  padding: 100px 0;
+  padding: 140px 0;
   background-color: #eee;
   color: #111;
 `;
