@@ -29,20 +29,20 @@ const About = () => {
           <AboutContentText>
             <H2>About Me</H2>
             <Paragraph>
-              I consider myself a lifetime learner with a passion for web development.
-              That passion began at the age of 11 when I was tasked to created a website
-              in my IT class.
+              I consider myself a lifetime learner with a passion for web development,
+              that began at the age of 11 when I was tasked to created a website in an IT
+              class.
             </Paragraph>
             <Paragraph>
-              Fast-forward 20+ years and I have found myself at the perfect moment for a
-              career change, to finally follow that passion that has existed all these
+              Fast-forward 20+ years and I have found myself in the perfect position for a
+              career change, to finally persue the passion that has existed all these
               years.
             </Paragraph>
             <Paragraph>
               Since July 2020, I have followed self-directed study using various resources
               such as Udemy courses, official documentation, Stackoverflow and YouTube, to
-              name a few. These resources armed me with the knowledge to then begin to
-              create my own projects and continue to hone these skills.
+              name just a few. These resources armed me with the knowledge to enable me to
+              begin creating my own projects and continue to sharpen these skills.
             </Paragraph>
             <Paragraph>
               I am now looking for an opportunity to put these skills to use in a
