@@ -17,6 +17,10 @@ export const SpanHeroTitle = styled.span`
   font-size: 54px;
 `;
 
+export const SpanLarge = styled.span`
+  font-size: 36px;
+`;
+
 export const SpanRegular = styled.span`
   font-size: 16px;
 `;

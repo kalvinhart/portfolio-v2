@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SpanHeroTitle } from "../../styles/fonts";
 import { sideLine } from "../../styles/mixins";
 
 export const HeroWrapper = styled.section`
@@ -11,7 +12,13 @@ export const HeroWrapper = styled.section`
 
 export const HeroContentWrapper = styled.div`
   position: relative;
-  padding: 80px;
+  padding: 80px 0 0 80px;
+  display: flex;
+  flex-direction: column;
 
   ${sideLine}
+
+  & ${SpanHeroTitle} {
+    margin-bottom: 40px;
+  }
 `;
