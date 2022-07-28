@@ -35,10 +35,12 @@ export const ContactLinks = styled.div`
     align-items: center;
     color: #111;
 
-    &:hover,
+    &:hover {
+      color: var(--clr-primary);
+    }
+
     &:hover svg {
       fill: var(--clr-primary);
-      color: var(--clr-primary);
     }
 
     & svg {
