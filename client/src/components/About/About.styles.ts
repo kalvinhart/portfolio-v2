@@ -29,7 +29,8 @@ export const AboutContentSkills = styled.div`
   flex-direction: column;
 
   & ${Paragraph} {
-    margin-bottom: 40px;
+    display: inline-block;
+    margin-bottom: 30px;
   }
 `;
 
