@@ -38,7 +38,12 @@ export const ContactLinks = styled.div`
   justify-content: space-evenly;
   align-items: center;
 
+  @media screen and (min-width: ${mediaSizes.large}) {
+    width: 45%;
+  }
+
   & ${Link} {
+    width: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,6 +62,7 @@ export const ContactLinks = styled.div`
 
     & svg {
       width: 40px;
+      height: 40px;
       margin-bottom: 10px;
       transition: fill 0.2s ease-out;
     }
