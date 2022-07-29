@@ -1,37 +1,78 @@
 import styled from "styled-components";
+import { MainContainer } from "../../styles/containers";
 import { Paragraph, SpanBold } from "../../styles/fonts";
+import { mediaSizes } from "../../styles/media";
 
 export const ProjectsWrapper = styled.section`
   width: 100%;
   padding: 140px 0;
   background-color: #eee;
   color: #111;
+
+  & ${MainContainer} {
+    padding: 20px;
+
+    @media screen and (min-width: ${mediaSizes.xl}) {
+      padding: 0;
+    }
+  }
 `;
 
 export const ProjectsContentWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   margin-bottom: 40px;
+
+  @media screen and (min-width: ${mediaSizes.med}) {
+    flex-direction: row;
+  }
 `;
 
 export const ProjectsContentText = styled.div`
-  width: 45%;
+  width: 100%;
+
+  @media screen and (min-width: ${mediaSizes.large}) {
+    width: 45%;
+  }
 `;
 
 export const ProjectsGrid = styled.div`
   width: 100%;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 560px);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 560px);
   grid-row-gap: 30px;
   grid-column-gap: 30px;
+
+  @media screen and (min-width: ${mediaSizes.med}) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 560px);
+  }
+
+  @media screen and (min-width: ${mediaSizes.large}) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 560px);
+  }
+
+  @media screen and (min-width: ${mediaSizes.xl}) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 560px);
+  }
 `;
 
 export const ProjectCard = styled.div`
-  min-width: 300px;
+  max-width: 370px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   background-color: #fafafa;
+  justify-self: center;
+
+  @media screen and (min-width: ${mediaSizes.large}) {
+    width: unset;
+    min-width: 300px;
+  }
 `;
 
 export const ProjectCardImage = styled.img`

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mediaSizes } from "../../styles/media";
 import { slopedSectionTop } from "../../styles/mixins";
 import { Link } from "../Projects/Projects.styles";
 
@@ -11,15 +12,24 @@ export const ContactWrapper = styled.section`
 `;
 
 export const ContactContentWrapper = styled.div`
+  padding: 20px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: ${mediaSizes.xl}) {
+    padding: 0;
+  }
 `;
 
 export const ContactText = styled.div`
-  width: 45%;
+  width: 100%;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: ${mediaSizes.large}) {
+    width: 45%;
+  }
 `;
 
 export const ContactLinks = styled.div`
@@ -35,11 +45,13 @@ export const ContactLinks = styled.div`
     align-items: center;
     color: #111;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--clr-primary);
     }
 
-    &:hover svg {
+    &:hover svg,
+    &:focus svg {
       fill: var(--clr-primary);
     }
 

@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { MainContainer } from "../../styles/containers";
 import { SpanPrimary } from "../../styles/fonts";
 import {
+  Burger,
+  BurgerLines,
+  BurgerMenuButton,
   HeaderLogo,
   HeaderNav,
   HeaderNavLI,
@@ -10,13 +14,24 @@ import {
 } from "./Header.styles";
 
 const Header = () => {
+  const [showNav, setShowNav] = useState(false);
+
+  const toggleShowNav = () => setShowNav((prev) => !prev);
+
   return (
     <StyledHeader>
       <MainContainer>
         <HeaderLogo>
           Kalvin <SpanPrimary>Hart</SpanPrimary>
         </HeaderLogo>
-        <HeaderNav>
+
+        <BurgerMenuButton aria-label="Open navigation menu" onClick={toggleShowNav}>
+          <Burger>
+            <BurgerLines className={showNav ? "show" : ""} />
+          </Burger>
+        </BurgerMenuButton>
+
+        <HeaderNav className={showNav ? "show" : ""}>
           <HeaderNavUL>
             <HeaderNavLI>
               <HeaderNavLink href="#about">About</HeaderNavLink>
