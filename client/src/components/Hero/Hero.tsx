@@ -10,7 +10,7 @@ const Hero = () => {
           <H1>
             Kalvin <SpanPrimary>Hart</SpanPrimary>
           </H1>
-          <SpanHeroTitle>Full stack developer</SpanHeroTitle>
+          <SpanHeroTitle>Full Stack Developer</SpanHeroTitle>
           <SpanLarge>React / TypeScript / Node / Express / MongoDB</SpanLarge>
         </HeroContentWrapper>
       </MainContainer>

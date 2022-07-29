@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { MainContainer } from "../../styles/containers";
 import { SpanCopyright } from "../../styles/fonts";
+import { mediaSizes } from "../../styles/media";
 import { underLine } from "../../styles/mixins";
 import { Link } from "../Projects/Projects.styles";
 
@@ -10,8 +11,13 @@ export const StyledFooter = styled.footer`
   background-color: #252525;
 
   & ${MainContainer} {
+    padding: 20px;
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: ${mediaSizes.xl}) {
+      padding: 0;
+    }
   }
 
   & ${SpanCopyright} {
@@ -34,17 +40,29 @@ export const FooterContent = styled.div`
   width: 100%;
   padding: 40px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: ${mediaSizes.med}) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 export const FooterNav = styled.nav``;
 
 export const FooterNavUL = styled.ul`
+  margin-bottom: 20px;
   list-style: none;
+  padding-inline-start: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media screen and (min-width: ${mediaSizes.med}) {
+    padding-inline-start: 40px;
+    margin-bottom: 0;
+  }
 `;
 
 export const FooterNavLI = styled.li`
