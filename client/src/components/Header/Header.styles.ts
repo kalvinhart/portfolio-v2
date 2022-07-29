@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { MainContainer } from "../../styles/containers";
 import { mediaSizes } from "../../styles/media";
+import { underLine } from "../../styles/mixins";
 
 export const StyledHeader = styled.header`
   position: fixed;
@@ -144,6 +145,8 @@ export const HeaderNavUL = styled.ul`
 `;
 
 export const HeaderNavLI = styled.li`
+  position: relative;
+
   &:not(:last-of-type) {
     margin-bottom: 20px;
 
@@ -162,5 +165,11 @@ export const HeaderNavLink = styled.a`
 
   &:hover {
     color: var(--clr-primary);
+
+    ${underLine}
+
+    &::after {
+      bottom: -15px;
+    }
   }
 `;
