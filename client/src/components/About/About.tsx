@@ -35,7 +35,7 @@ const About = () => {
             </Paragraph>
             <Paragraph>
               Fast-forward 20+ years and I have found myself in the perfect position for a
-              career change, to finally persue the passion that has existed all these
+              career change, to finally pursue the passion that has existed all these
               years.
             </Paragraph>
             <Paragraph>
