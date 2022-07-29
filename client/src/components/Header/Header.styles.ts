@@ -163,7 +163,8 @@ export const HeaderNavLink = styled.a`
   text-transform: uppercase;
   transition: color 0.2s ease-out;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--clr-primary);
 
     ${underLine}

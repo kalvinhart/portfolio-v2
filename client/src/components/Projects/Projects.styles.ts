@@ -87,7 +87,8 @@ export const Link = styled.a`
   transition: color 0.2s ease-out;
   color: var(--clr-primary);
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: underline;
     color: #111;
   }
