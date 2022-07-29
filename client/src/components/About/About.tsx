@@ -30,7 +30,7 @@ const About = () => {
             <H2>About Me</H2>
             <Paragraph>
               I consider myself a lifetime learner with a passion for web development,
-              that began at the age of 11 when I was tasked to created a website in an IT
+              that began at the age of 11 when I was tasked to create a website in an IT
               class.
             </Paragraph>
             <Paragraph>
