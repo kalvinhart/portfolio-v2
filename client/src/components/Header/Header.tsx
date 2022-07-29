@@ -18,6 +18,8 @@ const Header = () => {
 
   const toggleShowNav = () => setShowNav((prev) => !prev);
 
+  const closeNav = () => setShowNav(false);
+
   return (
     <StyledHeader>
       <MainContainer>
@@ -34,15 +36,21 @@ const Header = () => {
         <HeaderNav className={showNav ? "show" : ""}>
           <HeaderNavUL>
             <HeaderNavLI>
-              <HeaderNavLink href="#about">About</HeaderNavLink>
+              <HeaderNavLink href="#about" onClick={closeNav}>
+                About
+              </HeaderNavLink>
             </HeaderNavLI>
 
             <HeaderNavLI>
-              <HeaderNavLink href="#projects">Projects</HeaderNavLink>
+              <HeaderNavLink href="#projects" onClick={closeNav}>
+                Projects
+              </HeaderNavLink>
             </HeaderNavLI>
 
             <HeaderNavLI>
-              <HeaderNavLink href="#contact">Contact</HeaderNavLink>
+              <HeaderNavLink href="#contact" onClick={closeNav}>
+                Contact
+              </HeaderNavLink>
             </HeaderNavLI>
           </HeaderNavUL>
         </HeaderNav>
